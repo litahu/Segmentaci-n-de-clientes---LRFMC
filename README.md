@@ -15,6 +15,7 @@ El proyecto se centró en aplicar Machine Learning(clúster) para construir un m
 1. Segmentación de clientes utilizando datos de clientes de aerolíneas según el modelo LRFMC utilizando K-Means.<br>
 2. Analizar las características de cada grupo/cluster resultante de la segmentación.<br>
 3. Proporcionar información empresarial relacionada con los resultados del análisis.<br>
+<br>
 
 ---
 
@@ -31,6 +32,9 @@ El proyecto se centró en aplicar Machine Learning(clúster) para construir un m
 - Hasta el 77% de los clientes de las aerolíneas son hombres.
 - La mayoría, el 92% de los clientes de las aerolíneas provienen de China.
 - Hasta el 29% de los clientes de la aerolínea proceden de la provincia de Guangdong y el 15% de la ciudad de Guangzhou.
+<br>
+
+---
 
 ## 📂 **Pre-proceso**
 ### Tratamiento de los valores que faltan
@@ -48,5 +52,8 @@ El método de cálculo específico es el siguiente:
 
 ### Estandarización de características
 
+<br>
+
+---
 
 ## 📂 **Modeling**
