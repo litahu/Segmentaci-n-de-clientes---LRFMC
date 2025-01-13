@@ -48,7 +48,7 @@ El proyecto se centró en aplicar Machine Learning(clúster) para construir un m
 - Con base en el modelo LRFMC, se seleccionan seis características relacionadas con los índices del modelo LRFMC: FFP_DATE, LOAD_TIM, FLIGHT_COUNT, AVG_DISCOUNT, SEG_KM_SUM, LAST_TO_END.<br>
 
 <p align="center">
-   <kbd><img src="recursos/0.png" width=650px> </kbd> <br>
+   <kbd><img src="Recursos/0.png" width=650px> </kbd> <br>
   Tabla 1: Cálculo de características basado en LRFMC <br>
 </p>
 
@@ -182,7 +182,7 @@ De los resultados del gráfico, se puede ver que el porcentaje **más alto** de 
 
 ---
 ## 📂 **Referencias**
-
+>
 Buckland T.(2024). Segmentos RFM basados ​​en análisis RFM: una guía detallada. Moengage. https://www.moengage.com/blog/rfm-analysis-using-rfm-segments/<br>
 
 Makhija, P.(2024). What is RFM Analysis? Calculating RFM Score for Customer Segmentation. CleverTap. https://clevertap.com/blog/rfm-analysis/<br>
@@ -191,7 +191,7 @@ Tao, Y.(2020). Analysis Method for Customer Value of Aviation Big Data Based on 
 
 Wang, P. & Chen, T.(2022). Data Value Mining: A Case Study of Airline Customer Data. IJRES. https://www.ijres.org/papers/Volume-10/Issue-4/Ser-5/B10040513.pdf<br>
 
-
+>
 
 
 
