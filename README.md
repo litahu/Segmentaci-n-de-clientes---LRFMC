@@ -114,7 +114,8 @@ De los resultados del gráfico, se puede ver que el porcentaje **más alto** de 
    Figura 7: Patrones y características de los conglomerados basados ​​en LRFMC <br>
 </p>
 
-<p align="center" size="0.3">
+<br>
+<p align="center" >
    <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/8.JPG" width=650px> </kbd>
   Tabla 2: Evaluación y análisis de las características del cluster <br>
 </p>
