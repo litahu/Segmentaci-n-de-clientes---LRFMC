@@ -62,7 +62,7 @@ El proyecto se centró en aplicar Machine Learning(clúster) para construir un m
 ### Estandarización de características
 - Estandarización usando **StandardScaler**.
 <p align="center">
-   <kbd><img src="recursos/2.png" width=650px> </kbd> <br>
+   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/2.JPG" width=650px> </kbd> <br>
    Figura 2: Distribución de características de LRFMC después de la estandarización <br>
 </p>
 <br>
@@ -75,14 +75,14 @@ El algoritmo K-Means es un método de agrupación basado en **centroide** (centr
 
 Para determinar el número óptimo de grupos en el conjunto de datos, se realizó un análisis de grupos K utilizando el **Método del codo** y el **Gráfico de silueta**.
 <p align="center">
-   <kbd><img src="recursos/3.png" width=650px> </kbd> <br>
+   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/3.JPG" width=650px> </kbd> <br>
    Figura 3: Gráfico del método del codo con puntuación de distorsión <br>
 </p>
 
 Con base en los resultados del gráfico del **Método del Codo**, se observa que existen fracturas no muy agudas y una disminución significativa en los valores de inercia. Sin embargo, la línea **puntuación de distorsión** muestra que la K óptima está en **5**.
 
 <p align="center">
-   <kbd><img src="recursos/4.png" width=650px> </kbd> <br>
+   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/4.JPG" width=650px> </kbd> <br>
    Figura 4: Gráfico de trazado de silueta <br>
 </p>
 
@@ -92,7 +92,7 @@ Según los resultados de **Gráfico de silueta**, muestra Óptimo **5**. Para de
 Después de encontrar la K óptima, *ajustar el modelo K-Means* con **n_clusters=5** y realizar **reducción de dimensionalidad** usando **PCA**. Los resultados de los clusters formados se pueden observar en el siguiente gráfico:
 
 <p align="center">
-   <kbd><img src="recursos/5.png" width=650px> </kbd> <br>
+   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/5.JPG" width=650px> </kbd> <br>
    Figura 5: Agrupación de la segmentación de clientes <br>
 </p>
 <br>
@@ -102,7 +102,7 @@ Después de encontrar la K óptima, *ajustar el modelo K-Means* con **n_clusters
 ## 📂 **Interpretación**
 ### Presentación de Clientes
 <p align="center">
-   <kbd><img src="recursos/6.png" width=650px> </kbd> <br>
+   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/6.JPG" width=650px> </kbd> <br>
    Figura 6: Porcentaje del total de clientes para cada grupo <br>
 </p>
 
@@ -110,12 +110,12 @@ De los resultados del gráfico, se puede ver que el porcentaje **más alto** de 
 
 ### Análisis de las características del clúster basado en LRFMC
 <p align="center">
-   <kbd><img src="recursos/7.png" width=650px> </kbd> <br>
+   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/7.JPG" width=650px> </kbd> <br>
    Figura 7: Patrones y características de los conglomerados basados ​​en LRFMC <br>
 </p>
 
 <p align="center">
-   <kbd><img src="recursos/8.png" width=650px> </kbd>
+   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/8.JPG" width=650px> </kbd>
   Tabla 2: Evaluación y análisis de las características del cluster <br>
 </p>
 
