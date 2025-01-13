@@ -69,7 +69,7 @@ El proyecto se centró en aplicar Machine Learning(clúster) para construir un m
 
 ---
 
-## 📂 **Modeling**
+## 📂 **Modelando**
 ### Encontrar K óptimo
 El algoritmo K-Means es un método de agrupación basado en **centroide** (centro de agrupación). Ingrese el número de agrupaciones K y una base de datos que contenga N objetos de datos, y genere los K-clusters que cumplan con el estándar mínimo *suma de cuadrados de error*. <br>
 
@@ -88,7 +88,7 @@ Con base en los resultados del gráfico del **Método del Codo**, se observa que
 
 Según los resultados de **Gráfico de silueta**, muestra Óptimo **5**. Para determinar el valor K óptimo en el **Gráfico de silueta**, puede considerar dos factores: el coeficiente promedio lo más grande posible, pero aún más pequeño que la puntuación máxima de cada miembro del grupo, y considerar el grosor de los grupos que son similares. el uno al otro. El espesor de este cúmulo indica una composición equilibrada.<br>
 
-### Result
+### Resultado
 Después de encontrar la K óptima, *ajustar el modelo K-Means* con **n_clusters=5** y realizar **reducción de dimensionalidad** usando **PCA**. Los resultados de los clusters formados se pueden observar en el siguiente gráfico:
 
 <p align="center">
