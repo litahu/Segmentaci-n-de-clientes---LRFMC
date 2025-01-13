@@ -47,14 +47,153 @@ El proyecto se centró en aplicar Machine Learning(clúster) para construir un m
 - LRFMC es un método que se puede utilizar para segmentar a los clientes de aerolíneas. L significa lealtad, R por actualidad, F por frecuencia, M por valor monetario y C por categoría (descuento). Estos cinco factores se pueden utilizar para segmentar a los clientes en función de su lealtad a las aerolíneas, la frecuencia con la que viajan, la cantidad que gastan en boletos de avión y la cantidad de descuentos que utilizan los clientes.
 - Con base en el modelo LRFMC, se seleccionan seis características relacionadas con los índices del modelo LRFMC: FFP_DATE, LOAD_TIM, FLIGHT_COUNT, AVG_DISCOUNT, SEG_KM_SUM, LAST_TO_END.<br>
 
-El método de cálculo específico es el siguiente:
+<p align="center">
+   <kbd><img src="recursos/0.png" width=650px> </kbd> <br>
+  Tabla 1: Cálculo de características basado en LRFMC <br>
+</p>
 
 ### Tratamiento de los valores atípicos
+- El manejo de los valores atípicos se realiza mediante el método **IQR**.
+<p align="center">
+   <kbd><img src="recursos/1.png" width=650px> </kbd> <br>
+   Figura 1: Distribución de características de LRFMC después de eliminar valores atípicos  <br>
+</p>
 
 ### Estandarización de características
-
+- Estandarización usando **StandardScaler**.
+<p align="center">
+   <kbd><img src="recursos/2.png" width=650px> </kbd> <br>
+   Figura 2: Distribución de características de LRFMC después de la estandarización <br>
+</p>
 <br>
 
 ---
 
 ## 📂 **Modeling**
+### Encontrar K óptimo
+El algoritmo K-Means es un método de agrupación basado en **centroide** (centro de agrupación). Ingrese el número de agrupaciones K y una base de datos que contenga N objetos de datos, y genere los K-clusters que cumplan con el estándar mínimo *suma de cuadrados de error*. <br>
+
+Para determinar el número óptimo de grupos en el conjunto de datos, se realizó un análisis de grupos K utilizando el **Método del codo** y el **Gráfico de silueta**.
+<p align="center">
+   <kbd><img src="recursos/3.png" width=650px> </kbd> <br>
+   Figura 3: Gráfico del método del codo con puntuación de distorsión <br>
+</p>
+
+Con base en los resultados del gráfico del **Método del Codo**, se observa que existen fracturas no muy agudas y una disminución significativa en los valores de inercia. Sin embargo, la línea **puntuación de distorsión** muestra que la K óptima está en **5**.
+
+<p align="center">
+   <kbd><img src="recursos/4.png" width=650px> </kbd> <br>
+   Figura 4: Gráfico de trazado de silueta <br>
+</p>
+
+Según los resultados de **Gráfico de silueta**, muestra Óptimo **5**. Para determinar el valor K óptimo en el **Gráfico de silueta**, puede considerar dos factores: el coeficiente promedio lo más grande posible, pero aún más pequeño que la puntuación máxima de cada miembro del grupo, y considerar el grosor de los grupos que son similares. el uno al otro. El espesor de este cúmulo indica una composición equilibrada.<br>
+
+### Result
+Después de encontrar la K óptima, *ajustar el modelo K-Means* con **n_clusters=5** y realizar **reducción de dimensionalidad** usando **PCA**. Los resultados de los clusters formados se pueden observar en el siguiente gráfico:
+
+<p align="center">
+   <kbd><img src="recursos/5.png" width=650px> </kbd> <br>
+   Figura 5: Agrupación de la segmentación de clientes <br>
+</p>
+<br>
+
+---
+
+## 📂 **Interpretación**
+### Presentación de Clientes
+<p align="center">
+   <kbd><img src="recursos/6.png" width=650px> </kbd> <br>
+   Figura 6: Porcentaje del total de clientes para cada grupo <br>
+</p>
+
+De los resultados del gráfico, se puede ver que el porcentaje **más alto** de clientes está en el **clúster 3**, es decir, **25,96 %** y el **más bajo** está en el **clúster 0**. , **16,10%** .
+
+### Análisis de las características del clúster basado en LRFMC
+<p align="center">
+   <kbd><img src="recursos/7.png" width=650px> </kbd> <br>
+   Figura 7: Patrones y características de los conglomerados basados ​​en LRFMC <br>
+</p>
+
+<p align="center">
+   <kbd><img src="recursos/8.png" width=650px> </kbd>
+  Tabla 2: Evaluación y análisis de las características del cluster <br>
+</p>
+
+**Interpretación :** <br>
+1. Clúster 0 - **Hibernando**
+    - Un grupo de clientes que son miembros desde hace un período de tiempo medio pero que no utilizan con frecuencia la aerolínea, tienen baja frecuencia y valores monetarios y alta antigüedad.<br>
+    <br>
+    
+2. Grupo 1: **Clientes leales**
+    - El grupo de clientes que han sido miembros durante más tiempo y tienen una actividad de vuelo moderada, el lapso de tiempo para volar no es demasiado grande y utilizan la aerolínea con bastante frecuencia.<br>
+    <br>
+
+3. Grupo 2 - **Leales potenciales - Los Campeones**
+    - Los grupos de clientes que tienen una actividad de vuelos muy elevada, suelen utilizar aerolíneas y viajan largas distancias, por lo que tienen potencial para generar ingresos. Este grupo también tiene una tasa de antigüedad baja, lo que significa que el lapso de tiempo para cada vuelo no es demasiado largo ni demasiado largo. Además, el cliente es miembro desde hace bastante tiempo. <br>
+    <br>
+    
+4. Grupo 3: **Usuario reciente**
+    - Nuevos grupos de clientes que han utilizado recientemente la aerolínea. Esto se puede ver en el momento en que se unió como miembro recientemente y la tasa de actualidad es baja, aparte de que la actividad suele utilizar aerolíneas y la distancia recorrida es moderada. <br>
+    <br>
+    
+5. Grupo 4: **Necesita atención**
+    - Nuevo grupo de clientes que tienen baja actividad y uso de aerolíneas. Este grupo también tiene una tasa de descuento baja.<br>
+    <br>
+
+## 📂 **Recomendaciones para el negocio**
+
+1. Clúster 0 - **Hibernando**
+    - Clientes existentes, pero que no han utilizado la aerolínea recientemente. Se necesita tratamiento para que los clientes realicen compras lo antes posible, o la empresa perderá la confianza del cliente.
+    - **Recomendaciones comerciales:**
+         - Envíe correos electrónicos de marketing a clientes de este grupo con el programa "We Miss You" y proporcione vales especiales o códigos de descuento para usar en próximos vuelos con un período de validez predeterminado.<br>
+<br>
+
+2. Grupo 1: **Cliente leal**
+    - Grupos de clientes que llevan mucho tiempo utilizando la aerolínea. Los clientes están satisfechos con los servicios prestados y no cambian a otras alternativas. Es importante brindar un trato para que los clientes se sientan apreciados.
+    - **Recomendaciones comerciales:**
+         - Envíe un correo electrónico de agradecimiento "Gracias por volar con nosotros" y proporcione un cupón/código de descuento para su próximo vuelo.
+         - Proporcione puntos/recompensas por cada reserva de aerolínea que se puedan canjear por un cupón de descuento o un producto afiliado con la aerolínea.<br>
+<br>
+
+3. Grupo 2 - **Leales potenciales - Los Campeones**
+    - Utilizan a menudo líneas aéreas y en largas distancias. Puede contribuir significativamente a los ingresos de la empresa. Los clientes de este grupo deben ser tratados con amabilidad y cuidado, y es necesario hacer que los clientes se sientan apreciados para que se conviertan en leales a la empresa.
+     - **Recomendaciones comerciales:**
+         - Construir buenas relaciones con los clientes a través del soporte de embarque, como proporcionar un asistente de reserva de vuelos.
+         - Proporcionar souvenirs o mercancías.
+         - Ofrecer descuentos por comprar más de un vuelo a la vez.
+         - Proporcionar descuentos/recompensas especiales al volar invitando a amigos.
+         - Proporcionar puntos/recompensas por cada reserva de aerolínea.<br>
+<br>
+
+4. Grupo 3: **Usuario reciente**
+    - Los grupos que son nuevos en el uso de aerolíneas deben recibir tratamiento para convertirse en clientes leales a largo plazo. Es necesario realizar un seguimiento continuo para evitar que los clientes se vayan después de un determinado periodo de tiempo.
+    - **Recomendaciones comerciales:**
+         - Envíe un correo electrónico de agradecimiento "Gracias por volar con nosotros" y proporcione un cupón/código de descuento para su próximo vuelo.
+         - Da puntos por cada vuelo.
+         - Proporcionar recompensas/vales/descuentos después de lograr varios vuelos en un período determinado, por ejemplo 2 vuelos en 1 año.<br>
+<br>
+
+5. Grupo 4: **Necesita atención**
+    - Nuevos grupos de clientes con muy bajo consumo, esto puede ocurrir por diversos motivos. Requiere un tratamiento personalizado según la demografía y los hábitos del cliente.
+     - **Recomendaciones comerciales:**
+         - Enviar campañas o promos personalizadas.
+         - Envíe boletines informativos para anunciar descuentos y programas de vuelos útiles para animar a los clientes a utilizar la aerolínea nuevamente.<br>
+         <br>
+
+---
+## 📂 **Referencias**
+
+Buckland T.(2024). Segmentos RFM basados ​​en análisis RFM: una guía detallada. Moengage. https://www.moengage.com/blog/rfm-analysis-using-rfm-segments/<br>
+
+Makhija, P.(2024). What is RFM Analysis? Calculating RFM Score for Customer Segmentation. CleverTap. https://clevertap.com/blog/rfm-analysis/<br>
+
+Tao, Y.(2020). Analysis Method for Customer Value of Aviation Big Data Based on LFRMC Model ICPCSEE,https://www.semanticscholar.org/paper/Analysis-Method-for-Customer-Value-of-Aviation-Big-Tao/213ccbc6ffae1c5d71eb71dea4c6fb29bcd2e675<br>
+
+Wang, P. & Chen, T.(2022). Data Value Mining: A Case Study of Airline Customer Data. IJRES. https://www.ijres.org/papers/Volume-10/Issue-4/Ser-5/B10040513.pdf<br>
+
+
+
+
+
+
+
