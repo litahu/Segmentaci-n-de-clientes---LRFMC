@@ -1,2 +1,33 @@
-# Segmentaci-n-de-clientes---LRFMC
-✈ Este proyecto se centró en aplicar Machine Learning para construir un modelo clúster. De ese modo logré segmentar  y analizar las características de los clientes de una aerolínea. Sugerí recomendaciones de estrategia comercial basada en las puntuaciones LRFMC #python #
+# ✈ Segmentación-de-clientes basada en el modelo LRFMC
+El proyecto se centró en aplicar Machine Learning(clúster) para construir un modelo LRFMC
+
+- Tools : Python[View](https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/airlines.ipynb) <br>
+- Dataset: Udacity Academy <br>
+<br>
+
+---
+
+## 📂 **Introducción**
+### Declaración del problema 
+
+### Objetivos
+<br>
+
+---
+
+## 📂 **Análisis exploratorio de datos**
+### Dataset
+
+### Resumen
+
+## 📂 **Pre-proceso**
+### Tratamiento de los valores que faltan
+
+### Selección de características
+
+### Tratamiento de los valores atípicos
+
+### Estandarización de características
+
+
+## 📂 **Modeling**
