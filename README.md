@@ -48,7 +48,7 @@ El proyecto se centró en aplicar Machine Learning(clúster) para construir un m
 - Con base en el modelo LRFMC, se seleccionan seis características relacionadas con los índices del modelo LRFMC: FFP_DATE, LOAD_TIM, FLIGHT_COUNT, AVG_DISCOUNT, SEG_KM_SUM, LAST_TO_END.<br>
 
 <p align="center">
-   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/0.JPG" width=650px> </kbd> <br>
+   <kbd><img width="500" alt="workflow" src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/0.JPG" width=650px> </kbd> <br>
   Tabla 1: Cálculo de características basado en LRFMC <br>
 </p>
 
@@ -106,7 +106,7 @@ Después de encontrar la K óptima, *ajustar el modelo K-Means* con **n_clusters
    Figura 6: Porcentaje del total de clientes para cada grupo <br>
 </p>
 
-De los resultados del gráfico, se puede ver que el porcentaje **más alto** de clientes está en el **clúster 1**, es decir, **23,62%** y el **más bajo** está en el **clúster 4**, **17,66%** .
+De los resultados del gráfico, se puede ver que el porcentaje **más alto** de clientes está en el **clúster 1**, es decir, **23,62%** y el **más bajo** está en el **clúster 4**, con **17,66%** .
 
 ### Análisis de las características del clúster basado en LRFMC
 <p align="center">
