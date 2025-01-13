@@ -48,7 +48,7 @@ El proyecto se centró en aplicar Machine Learning(clúster) para construir un m
 - Con base en el modelo LRFMC, se seleccionan seis características relacionadas con los índices del modelo LRFMC: FFP_DATE, LOAD_TIM, FLIGHT_COUNT, AVG_DISCOUNT, SEG_KM_SUM, LAST_TO_END.<br>
 
 <p align="center">
-   <kbd><img src="[Recursos/0.png](https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/0.JPG)" width=650px> </kbd> <br>
+   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/0.JPG" width=650px> </kbd> <br>
   Tabla 1: Cálculo de características basado en LRFMC <br>
 </p>
 
