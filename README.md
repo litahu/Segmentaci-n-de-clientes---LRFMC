@@ -182,16 +182,16 @@ De los resultados del gráfico, se puede ver que el porcentaje **más alto** de 
 
 ---
 ## 📂 **Referencias**
->
-Buckland T.(2024). Segmentos RFM basados ​​en análisis RFM: una guía detallada. Moengage. https://www.moengage.com/blog/rfm-analysis-using-rfm-segments/<br>
 
-Makhija, P.(2024). What is RFM Analysis? Calculating RFM Score for Customer Segmentation. CleverTap. https://clevertap.com/blog/rfm-analysis/<br>
+[1] Buckland T.(2024). Segmentos RFM basados ​​en análisis RFM: una guía detallada. Moengage. https://www.moengage.com/blog/rfm-analysis-using-rfm-segments/<br>
 
-Tao, Y.(2020). Analysis Method for Customer Value of Aviation Big Data Based on LFRMC Model ICPCSEE,https://www.semanticscholar.org/paper/Analysis-Method-for-Customer-Value-of-Aviation-Big-Tao/213ccbc6ffae1c5d71eb71dea4c6fb29bcd2e675<br>
+[2] Makhija, P.(2024). What is RFM Analysis? Calculating RFM Score for Customer Segmentation. CleverTap. https://clevertap.com/blog/rfm-analysis/<br>
 
-Wang, P. & Chen, T.(2022). Data Value Mining: A Case Study of Airline Customer Data. IJRES. https://www.ijres.org/papers/Volume-10/Issue-4/Ser-5/B10040513.pdf<br>
+[3] Tao, Y.(2020). Analysis Method for Customer Value of Aviation Big Data Based on LFRMC Model ICPCSEE,https://www.semanticscholar.org/paper/Analysis-Method-for-Customer-Value-of-Aviation-Big-Tao/213ccbc6ffae1c5d71eb71dea4c6fb29bcd2e675<br>
 
->
+[4] Wang, P. & Chen, T.(2022). Data Value Mining: A Case Study of Airline Customer Data. IJRES. https://www.ijres.org/papers/Volume-10/Issue-4/Ser-5/B10040513.pdf<br>
+
+
 
 
 
