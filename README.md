@@ -116,9 +116,10 @@ De los resultados del gráfico, se puede ver que el porcentaje **más alto** de 
 
 <br>
 <p align="center" >
-   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/8.JPG" width=650px> </kbd>
+   <kbd><img width="300" alt="workflow" src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/8.JPG" width=650px> </kbd> <br>
   Tabla 2: Evaluación y análisis de las características del cluster <br>
 </p>
+<br>
 
 **Interpretación :** <br>
 1. Clúster 0 - **Hibernando**
