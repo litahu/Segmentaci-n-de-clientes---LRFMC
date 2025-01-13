@@ -2,7 +2,8 @@
 El proyecto se centró en aplicar Machine Learning(clúster) para construir un modelo LRFMC
 
 - Tools : Python [View](https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/airlines.ipynb) <br>
-- Dataset: Udacity Academy <br>
+- Dataset: Udacity Academy 
+<br>
 
 ---
 
