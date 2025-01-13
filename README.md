@@ -55,7 +55,7 @@ El proyecto se centró en aplicar Machine Learning(clúster) para construir un m
 ### Tratamiento de los valores atípicos
 - El manejo de los valores atípicos se realiza mediante el método **IQR**.
 <p align="center">
-   <kbd><img src="recursos/1.png" width=650px> </kbd> <br>
+   <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/1.JPG" width=650px> </kbd> <br>
    Figura 1: Distribución de características de LRFMC después de eliminar valores atípicos  <br>
 </p>
 
@@ -114,7 +114,7 @@ De los resultados del gráfico, se puede ver que el porcentaje **más alto** de 
    Figura 7: Patrones y características de los conglomerados basados ​​en LRFMC <br>
 </p>
 
-<p align="center">
+<p align="center" size="0.3">
    <kbd><img src="https://github.com/litahu/Segmentaci-n-de-clientes---LRFMC/blob/main/Recursos/8.JPG" width=650px> </kbd>
   Tabla 2: Evaluación y análisis de las características del cluster <br>
 </p>
