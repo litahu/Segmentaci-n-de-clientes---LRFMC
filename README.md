@@ -106,7 +106,7 @@ Después de encontrar la K óptima, *ajustar el modelo K-Means* con **n_clusters
    Figura 6: Porcentaje del total de clientes para cada grupo <br>
 </p>
 
-De los resultados del gráfico, se puede ver que el porcentaje **más alto** de clientes está en el **clúster 3**, es decir, **25,96 %** y el **más bajo** está en el **clúster 0**. , **16,10%** .
+De los resultados del gráfico, se puede ver que el porcentaje **más alto** de clientes está en el **clúster 1**, es decir, **23,62%** y el **más bajo** está en el **clúster 4**, **17,66%** .
 
 ### Análisis de las características del clúster basado en LRFMC
 <p align="center">
